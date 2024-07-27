@@ -1,3 +1,242 @@
-h1{
-    color: brown;
-}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(180,180,180,255);
+  }
+  
+  .fixed-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is on top of other content */
+    text-align: center;
+  }
+  
+  .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #242323;
+    align-items: center;
+    color: white;
+    padding: 10px 10px;
+  
+  }
+  .logo{
+    width: 20%;
+  }
+  .nav-bar{
+    width: 60%;
+  }
+  .unorder{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  ul li{
+   
+    margin: 0 20px ;
+  }
+  
+  
+    
+   
+  ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .account{
+    width: 20%;
+    display: flex;
+    margin-left: 25px;
+    color: white;
+  
+  }
+   
+  h1{
+    color: aliceblue;
+  }
+  .intro{
+    color:rgb(4, 171, 171);
+    font-size:40px;
+  
+    
+  }
+  
+  .reg {
+  border-color: black;
+  color: rgb(53, 176, 176);
+  background-color: rgb(4, 171, 171);
+  }
+  
+  .reg:hover {
+  background-color: rgb(53, 176, 176);
+  color: black;
+  }
+  
+  
+  
+  
+  .button {
+  border: 2px solid ;
+  
+  color: black;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px
+  }
+  
+  /* Green */
+  .sign {
+  border-color: white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .sign:hover {
+  background-color: white;
+  color: black;
+  }
+  .spin {
+    animation: spin 5s linear infinite;
+    border-radius: 70%;
+   
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  
+  
+  }
+  
+  
+  
+  .home {
+    height: 820px; /* Full viewport height */
+    background: url('assect/image/cryptoimg.jpg') fixed ;
+    background-size: cover;
+    display: flex;
+   position:relative;
+   justify-content:center;
+    align-items:center;
+    width: 100%;
+  }
+  .cryptohome {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .spin-1{
+  width: 100%;
+  margin: 5%;
+  }
+  .home-1{
+    display: flex;
+  }
+  h2  {
+    color: aliceblue;
+  }
+  
+  hr{
+    border-style: 15px;
+    border-color: black;
+    border-width:2px 0 0 0 ;
+    height: 1px;
+    width: 40px;
+  margin: 1% 0 4% 48%;
+  
+  }
+  .about{
+    margin: 50px;
+  
+  }
+  .about-con{
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .about-1{
+    width: 50%;
+  }
+  .about-2{
+    width: 50%;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+  #menu{
+    display: none;
+  }
+
+  .wall{
+    background-image: url('IMG_4512.jpg') ;
+    background-size: cover;
+      background-position:center;
+      margin-bottom: 40px;
+      height:auto;
+      width: 100%;
+      position: relative;
+      justify-content:space-around;
+      align-items:center;
+      display:flex;
+    
+  
+  }
+  @media only screen and (max-width: 600px) {
+    .header{
+        width: 100%;
+
+    }
+    .home-1{
+      flex-direction: column;
+    }
+  
+    .nav-bar, .account{
+      display: none;
+    }
+   
+    .spin1{
+      margin: 20%;
+    }
+    #menu{
+    display: block;
+    width: 20%;
+    }
+    .about-con{
+        flex-direction: column;
+        width: 100%;
+      }
+      .about-1{
+        width: 100%;
+      }
+      .about-2{
+        width: 100%;
+      }
+      .cryptohome {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+      }
+      .logo{
+        width: 80%;
+      }
+      .wall{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+        
+      }
+      .wall-1{
+        width: 100%;
+      }
+
+
+    }
