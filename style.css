@@ -1,68 +1,64 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-body{
-background-color: rgb(180,180,180,255);
-}
-.fixed-header{
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 1000; /* Ensures the header is on top of other content */
-text-align: center;
-}
-.header{
-width: 100%;
+
+.home{
+height: 820px; /* Full viewport height */
+background: url('assect/image/cryptoimg.jpg') fixed ;
+background-size: cover;
 display: flex;
-justify-content: space-around;
+position:relative;
+justify-content:center;
+align-items:center;
+width: 100%;
+
+}
+header{
 background-color: #242323;
-align-items: center;
-color: white;
-padding: 10px 10px;
+
 }
-.logo{
-width: 20%;
+.nav-link{
+color: aliceblue !important;
 }
-.nav-bar{
-width: 60%;
-}
-.unorder{
-display: flex;
-list-style-type: none;
-margin: 0;
-padding: 10px 0;
-justify-content: center;
-}
-ul li{
-margin: 0 20px ;
-}
-ul li a{
-color: white;
-text-decoration: none;
-}
-.account{
-width: 20%;
-display: flex;
-margin-left: 25px;
-color: white;
-}
-h1{
+.crypto{
 color: aliceblue;
 }
-.intro{
-color:rgb(4, 171, 171);
-font-size:40px;
+.navbar-content{
+padding:1% 1% 1% 8%;
+
+}
+.spin {
+animation: spin 5s linear infinite;
+border-radius: 70%;
+}
+
+@keyframes spin {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+.cryptohome {
+text-align: center;
+width: 100%;
+}
+
+.home-1{
+display: flex;
+}
+h2 {
+color: aliceblue;
 }
 .reg {
 border-color: black;
-color: rgb(53, 176, 176);
+color: white;
 background-color: rgb(4, 171, 171);
 }
 .reg:hover {
 background-color: rgb(53, 176, 176);
 color: black;
+}
+h1{
+color: aliceblue;
+}
+.intro{
+color: rgb(53, 176, 176);
+font-size: 80px;
 }
 .button {
 border: 2px solid ;
@@ -82,38 +78,8 @@ background-color: rgba(0, 0, 0, 0.5);
 background-color: white;
 color: black;
 }
-.spin {
-animation: spin 5s linear infinite;
-border-radius: 70%;
-}
-@keyframes spin {
-from { transform: rotate(0deg); }
-to { transform: rotate(360deg); }
-}
-.home {
-height: 820px; /* Full viewport height */
-background: url('assect/image/cryptoimg.jpg') fixed ;
-background-size: cover;
-display: flex;
-position:relative;
-justify-content:center;
-align-items:center;
-width: 100%;
-}
-.cryptohome {
-padding: 20px;
-text-align: center;
-width: 100%;
-}
-.spin-1{
-width: 100%;
-margin: 5%;
-}
-.home-1{
-display: flex;
-}
-h2 {
-color: aliceblue;
+.bar-toggler{
+background-color: aliceblue;
 }
 hr{
 border-style: 15px;
@@ -123,8 +89,9 @@ height: 1px;
 width: 40px;
 margin: 1% 0 4% 48%;
 }
+
 .about{
-margin: 50px;
+margin: 0;
 }
 .about-con{
 width: 100%;
@@ -135,29 +102,19 @@ margin: 0;
 width: 50%;
 }
 .about-2{
-width: 50%;
+width: 100%;
+height: 70%;
 }
 iframe{
 width: 100%;
 height: 100%;
 }
-#menu{
-display: none;
-}
+.spin1{
+width: 50%;
 
+}
 .wall{
 background-image: url('assect/image/pablowall.jpg') ;
-background-size: cover;
-background-position:center;
-height:auto;
-width: 100%;
-position: relative;
-justify-content:space-around;
-align-items:center;
-display:flex;
-}
-.wall-1{
-width: 100%;
 }
 .tro{
 color:rgb(4, 171, 171);
@@ -166,7 +123,9 @@ color:rgb(4, 171, 171);
 float: left;
 width: 33.3%;
 padding: 8px;
+
 }
+
 .price {
 list-style-type: none;
 border: 1px solid #ccc;
@@ -176,23 +135,28 @@ padding: 0;
 transition: 0.3s;
 background-color: rgb(204, 204, 204,255);
 }
+
 .price:hover {
 box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
+
 .price .header-1 {
 background-color: #111;
 color: white;
 font-size: 25px;
 }
+
 .price li {
 border-bottom: 1px solid #eee;
 padding: 20px;
 text-align: center;
 }
+
 .price .grey {
 background-color: #eee;
 font-size: 20px;
 }
+
 .button3 {
 background-color: cyan;
 border: none;
@@ -200,31 +164,6 @@ padding: 10px 25px;
 text-align: center;
 text-decoration: none;
 font-size: 18px;
-}
-.large-icon{
-color:aliceblue;
-}
-
-strong{
-font-size: 20px;
-}
-
-/*span element floater*/
-.container-1 {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-gap: 10px;
-margin: 10px;
-}
-.box {
-flex: 1 1 calc(33.33% - 20px); /* 3 columns with some space between */
-color: black;
-padding: 10px;
-text-align:start;
-box-sizing: border-box;
-display: flex;
-gap: 15px;
 }
 .best-wall{
 background-image: url('assect/image/bestwall.jpg');
@@ -238,34 +177,99 @@ text-align: center;
 color: rgb(180,180,180,255);
 background-attachment: scroll;
 }
-
 .ref1{
 background-color: black;
 color:cyan;
 width:100px;
 text-align: center;
 border-radius: 8px;
-margin-left: 5%;
+margin-left: 35%;
+
 }
+.faq{
+width: 100%;
+display: flex;
+background-image: url('assect/image/faq.jpg');
+background-size: cover;
+background-position: bottom;
+color:rgb(180,180,180,255) ;
+height: auto;
 
-
-@media only screen and (max-width: 600px) {
-.header{
+}
+.faq-con{
+width: 100%;
+display: flex;
+margin: 50px;
+height: auto;
+}
+.faq-1{
 width: 100%;
 
 }
+.faq-2{
+width: 100%;
+
+}
+h3{
+text-align: center;
+}
+
+input[type='submit'] {
+background-color:cyan;
+border: none;
+border-radius: 10px;
+padding: 15px 15px;
+font-weight: bold;
+color: black;
+margin:0 10px 5px 70px;
+width:300px
+
+}
+input[type='text'], input[type='email'] {
+border: 1px solid #2F5A78;
+width: 300px;
+padding: 15px;
+margin:0 10px 5px 25px;
+}
+
+input[type='textarea'] {
+border: 1px solid #2F5A78;
+width: 300px;
+padding: 50px;
+margin:0 10px 5px 13px;
+}
+footer{
+width: 100%;
+height: 100%;
+background-color: rgba(34,40,45,255);
+text-align: center;
+padding: 70px;
+color: #ccc;
+}
+.contact{
+margin: 70px;
+display: flex;
+width: 100%;
+}
+.contact-1{
+width: 100%;
+
+}
+.contact-2{
+width: 100%;
+}
+
+
+@media (max-width:600px) {
 .home-1{
 flex-direction: column;
 }
-.nav-bar, .account{
-display: none;
-}
 .spin1{
-margin: 20%;
+width: 100%;
 }
-#menu{
-display: block;
-width: 20%;
+.intro{
+color: rgb(53, 176, 176);
+font-size: 40px;
 }
 .about-con{
 flex-direction: column;
@@ -277,39 +281,8 @@ width: 100%;
 .about-2{
 width: 100%;
 }
-.cryptohome {
-padding: 0;
-text-align: center;
-width: 100%;
-}
-.logo{
-width: 80%;
-}
-.wall{
-flex-direction: column;
-width: 100%;
-margin-bottom: 0;
-background-size: cover;
-justify-content: space-between;
-position: relative;
-}
-.wall-1{
-width: 100%;
-}
 .columns {
 width: 100%;
 }
-.container-1{
-width: 100%;
-height: auto;
-}
-.box {
-flex: 1 1 100%; /* Stack the boxes in a single column on smaller screens */
-width: 100%;
-height: auto;
-}
-.best-wall{
-width: 100%;
 }
 
-}
